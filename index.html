@@ -32,7 +32,7 @@
 
   <body>
     <!-- Header -->
-    <header class="header header-shadow" id="home">
+    <header hidden class="header header-shadow" id="home">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
@@ -49,6 +49,12 @@
               <a class="header-nav-link" href="">Contacts</a>
             </li>
           </ul>
+
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
         </nav>
         <address class="header-adress">
           <ul class="header-adress-list">
@@ -68,7 +74,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main hidden>
       <!-- Hero Section -->
       <section class="hero section">
         <div class="container hero-container">
@@ -625,7 +631,6 @@
                 placeholder="E-mail"
                 id="email-input"
                 name="email-input"
-                autofocus
               />
             </label>
             <button class="button subscribe-button" type="submit">
@@ -728,6 +733,82 @@
       </div>
     </div>
     <!-- End Modal window  -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <button class="mobile-close-btn js-close-modal" type="button">
+        <svg class="modal-btn-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li><a class="accent" href="#">Studio</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li>
+          <a class="accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="social-list mobile-social-list">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to instagram.com"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to twitter.com"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to facebook.com"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://linkedinn.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to linkedinn.com"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Mobile Menu  -->
 
     <script src="./js/form.js"></script>
   </body>
