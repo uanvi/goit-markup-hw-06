@@ -97,12 +97,6 @@ button {
   max-width: 320px;
   padding: 16px;
   margin: 0 auto;
-  /* width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto; */
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 @media only screen and (min-width: 767.98px) {
   .container {
@@ -137,16 +131,7 @@ button {
   row-gap: var(--indent-row);
   column-gap: var(--indent-col);
 }
-/* @media only screen and (min-width: 767.98px) {
-  .card-set {
-    --items: 2;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .card-set {
-    --items: 4;
-  }
-} */
+
 .card-set-item {
   width: calc((100% - (var(--items) - 1) * var(--indent-col)) / var(--items));
 }
